@@ -35,6 +35,23 @@ bool checkPalindrome(string str) {
     
 }
 
+int countWords(string str) {
+	// Write your code here
+
+	int len = str.length();
+	int count = 1;
+
+	for(char ch : str){
+		if(ch == ' '){
+			count++;
+		}
+	}
+
+	return count;
+}
+
+
+
 int main(){
 
 /*
@@ -111,6 +128,8 @@ int main(){
    removechar(input, c);
    */
 
+  /*
+  
   string str;
 
   getline(cin, str);
@@ -118,6 +137,15 @@ int main(){
  int ans =  checkPalindrome(str);
 
  cout << ans << endl;
+  */
+
+ string str;
+ getline(cin, str);
+
+  int ans =  countWords(str);
+  cout << ans << endl;
+
+
 
 
 

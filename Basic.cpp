@@ -2,6 +2,39 @@
 #include <string>
 using namespace std;
 
+void removechar(string input, char c){
+
+    int len = input.length();
+
+    for(int i = 0; i<len; i++){
+        if(input.at(i) != c){
+            cout << input.at(i);
+        }else{
+            continue;
+        }
+    }
+
+}
+
+
+
+bool checkPalindrome(string str) {
+
+    int i=0; 
+    int len = str.length();
+    while(i<len){
+        if(str.at(i)==str.at(len-1)){
+            i++;
+            len--;
+        }else{
+            return false;
+        }
+    }
+
+    return true;
+    
+}
+
 int main(){
 
 /*
@@ -55,6 +88,46 @@ int main(){
 
    cout << endl;
 */
+
+    // another way to do above is 
+    /*
+    string name;
+    cin >> name;
+    for(char ch : name){
+        cout << ch << " " ;
+    }
+    */
+
+   //remove charecter
+
+   /* 
+   
+   string input;
+   getline(cin, input);
+
+   char c;
+   cin >> c;
+
+   removechar(input, c);
+   */
+
+  string str;
+
+  getline(cin, str);
+
+ int ans =  checkPalindrome(str);
+
+ cout << ans << endl;
+
+
+
+   
+
+
+
+
+
+
 
     return 0;
 }

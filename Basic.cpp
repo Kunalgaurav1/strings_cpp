@@ -69,7 +69,7 @@ int main(){
 
 
 //important concepts 
-/*
+
 
    string name;
    int age;
@@ -80,7 +80,7 @@ int main(){
    getline(cin, name);
 
    cout << name << " " << age << endl;
-*/
+
 
 /*
 
@@ -139,11 +139,11 @@ int main(){
  cout << ans << endl;
   */
 
- string str;
- getline(cin, str);
+//  string str;
+//  getline(cin, str);
 
-  int ans =  countWords(str);
-  cout << ans << endl;
+//   int ans =  countWords(str);
+//   cout << ans << endl;
 
 
 
